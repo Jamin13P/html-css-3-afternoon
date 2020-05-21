@@ -5,7 +5,7 @@
 }
 
 .background-image {
-  height: 75vh;
+  height: 90vh;
   width: 100vw;
   background-image: url("https://blackrockdigital.github.io/startbootstrap-agency/assets/img/header-bg.jpg");
   background-position: center;
@@ -81,7 +81,6 @@
 }
 
 .content {
-  border: solid magenta 1px;
   height: 65vh;
   width: 100vw;
   display: flex;
@@ -121,8 +120,19 @@
 }
 
 .mobile-nav-open {
-  height: 30vh;
-  background-color: red;
+  height: 15vh;
+  background-color: #212529;
+  overflow: hidden;
+}
+
+.mobile-nav-text {
+  color: white;
+  margin-left: 6vw;
+  list-style: none;
+}
+
+.mobile-nav-text:hover{
+  color: yellow
 }
 
 @media (max-width: 1065px) {
