@@ -1,38 +1,144 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.background-image {
+  height: 75vh;
+  width: 100vw;
+  background-image: url("https://blackrockdigital.github.io/startbootstrap-agency/assets/img/header-bg.jpg");
+  background-position: center;
+  background-attachment: fixed;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header,
+.nav
+ {
+  height: 10vh;
+  width: 100vw;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+}
+
+.header {
+  position: relative;
+}
+
+.nav,
+.nav-links
+ {
+  display: flex;
+}
+
+.home {
+  height: 10vh;
+  width: 30vw;
+  margin-left: 15vw;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.home-text {
+  height: 2rem;
+}
+
+.nav-links {
+  width: 40vw;
+  height: 10vh;
+  margin-right: 15vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.links {
+  display: inline-block;
+  padding: 1vw;
+  font-weight: 600;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.links:hover {
+  color: yellow;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.text {
+  color: white;
+}
+
+.button {
+  height: 5rem;
+  width: 20rem;
+  color: white;
+  background-color: goldenrod;
+  border: none;
+  border-radius: .25rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.content {
+  border: solid magenta 1px;
+  height: 65vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.greeting,
+.button-placement
+{
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.text-1 {
+  font-weight: 300;
+  font-size: 2.5rem;
+  font-style: italic;
+  font-family: Serif;
+  margin-bottom: 2rem;
+}
+
+.text-2 {
+  font-size: 5rem;
+  margin-bottom: 5rem;
+}
+
+.mobile-menu-button {
+  margin-right: 10vw;
+  height: 2.5rem;
+  width: 5rem;
+  border-radius: .25rem;
+  background-color: goldenrod;
+  color: white;
+  border: none;
+}
+
+.mobile-nav-open {
+  height: 30vh;
+  background-color: red;
+}
+
+@media (max-width: 1065px) {
+  .header {
+    background-color: #212529;
   }
-  to {
-    transform: rotate(360deg);
+  .nav-links {
+    display: none;
+  }
+}
+
+@media (min-width: 1066px) {
+  .mobile-menu-button {
+    display: none;
+  }
+  .mobile-nav {
+    display: none;
   }
 }
