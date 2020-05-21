@@ -47,14 +47,20 @@ export default class App extends React.Component {
                 MENU
               </button>
             </header>
-            <nav className={`mobile-nav ${this.state.isMobileMenuOpen ? "mobile-nav-open" : null}`}>
-              <ul className="mobile-nav-menu">
-                <li className="mobile-nav-text">SERVICES</li>
-                <li className="mobile-nav-text">PORTFOLIO</li>
-                <li className="mobile-nav-text">ABOUT</li>
-                <li className="mobile-nav-text">TEAM</li>
-                <li className="mobile-nav-text">CONTACT</li>
-              </ul>
+            <nav
+              className={`mobile-nav ${
+                this.state.isMobileMenuOpen ? "mobile-nav-open" : null
+              }`}
+            >
+              <div className="mobile-nav-menu">
+                <ul className="mobile-list">
+                  <li className="mobile-nav-text">SERVICES</li>
+                  <li className="mobile-nav-text">PORTFOLIO</li>
+                  <li className="mobile-nav-text">ABOUT</li>
+                  <li className="mobile-nav-text">TEAM</li>
+                  <li className="mobile-nav-text">CONTACT</li>
+                </ul>
+              </div>
             </nav>
           </div>
           <div className="content">
