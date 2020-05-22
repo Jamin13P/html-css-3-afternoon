@@ -126,10 +126,15 @@
   border: none;
 }
 
-.mobile-nav-open {
-  height: 15vh;
+.mobile-nav-menu {
+  height: 0px;
   background-color: #212529;
-  position: relative;
+  overflow: hidden;
+  transition: all 1s;
+}
+
+.mobile-nav-menu-open {
+  height: 15vh;
 }
 
 .mobile-nav-text {
@@ -141,6 +146,7 @@
 .mobile-nav-text:hover{
   color: yellow
 }
+
 
 @media (max-width: 1065px) {
   .header {
